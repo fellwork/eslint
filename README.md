@@ -1,0 +1,2 @@
+# eslint
+Fellwork ESLint monorepo
