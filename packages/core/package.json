@@ -26,7 +26,8 @@
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "*.md"
   ],
   "scripts": {
     "build": "unbuild",
