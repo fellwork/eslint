@@ -1,1 +1,1 @@
-# eslint-config-core
+# eslint-shared

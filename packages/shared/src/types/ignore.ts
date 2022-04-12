@@ -1,65 +1,65 @@
-// import type { Linter } from 'eslint'
-import type { Dictionary, DictionaryValues } from 'ts-essentials'
-
-export const dict: Dictionary<string> = {}
-
-export type IgnoreValues = DictionaryValues<Dictionary<string>>
-
-export const ignoreGroups = () => {
-  return {
-    base: {},
-    build: {},
-    dx: {},
-    test: {},
-  }
+const IGNORE = {
+  bower_comp: '**/bower_components',
+  build_dir: '**/build/**',
+  change_log: '**/CHANGELOG.md',
+  dist_dir: '**/dist',
+  eslint_cache: '**/.eslintcache',
+  fixtures: '**/__fixtures__',
+  git_dir: '**/.git',
+  history_dir: '**/.history',
+  idea_dir: '**/.idea',
+  istanbul_cov: '**/coverage/**',
+  js_cov: '**/lib-cov',
+  jspm: '**/jspm_packages',
+  log_dir: '**/.log',
+  logs_dir: '**/logs',
+  map_files: '**/*.map',
+  min_files: '**/*.min.*',
+  mocks: '**/__mocks__',
+  next_dir: '**/.next',
+  node_modules: '**/node_modules',
+  node_repl_history: '**/.node_repl_history',
+  npm_cache: '**/.npm',
+  npm_debug: '**/npm-debug.log*',
+  npm_lock: '**/packages-lock.json',
+  nuxt_dir: '**/.nuxt',
+  nyc_cov: '**/.nyc_output',
+  out_dir: '**/out/**',
+  output_dir: '**/.output',
+  pnpm_cache: '**/.pnpm',
+  pnpm_debug: '**/.pnpm-debug.log*',
+  pnpm_lock: '**/pnpm-lock.yaml',
+  snapshots: '**/__snapshots__',
+  temp_dir: '**/temp/**',
+  test_dir: '**/test/**',
+  tests_dir: '**/tests/**',
+  tests: '**/__tests__',
+  tmp_dir: '**/tmp',
+  vscode_dir: '**/.vscode',
+  yarn_cache: '**/.yarn',
+  yarn_debug: '**/yarn-debug.log*',
+  yarn_error: '**/yarn-error.log*',
+  yarn_lock: '**/yarn.lock',
 }
 
-const ignoreBaseDict: Dictionary<string> = {
-  changeLog: '**/CHANGELOG.md',
-  eslintCache: '**/.eslintcache',
-  license: '**/LICENSE*',
-  npmLock: '**/packages-lock.json',
-  pnpmLock: '**/pnpm-lock.yaml',
-  yarnLock: '**/yarn.lock',
-} as const
-
-// eslint-disable-next-line no-console
-console.log(ignoreBaseDict)
-
-export const ignoreBuildDict = {
-  build: '/build/**',
-  dist: '/dist/**',
-  map: '**/*.map',
-  min: '**/*.min.*',
-  out: '/out/**',
-  public: '**/public/**',
-  temp: '/temp/**',
-}
-
-export const ignoreDxDict = {
-  git: '/.git/**',
-  history: '/.history/**',
-  idea: '/.idea/**',
-  vscode: '/.vscode/**',
-}
-
-export const ignoreTestTypes = {
-  coverage: '/coverage/**',
-  nyc: '/.nyc_output/**',
-  test: '**/test/**',
-  tests: '**/tests/**',
-  underscoreFixtures: '**/__fixtures__/**',
-  underscoreMocks: '**/__mocks__/**',
-  underscoreSnapshots: '**/__snapshots__/**',
-  underscoreTests: '**/__tests__/**',
-}
-
-/**
- * Preferred ESLint ignore patterns to ensure that the project is linted at the root.
- */
-export const notIgnore = {
-  notDotDir: '!.*/**/*',
-  notDotFile: '!.*',
-  notSource: '!src/**/*',
-  notRoot: '!**/*',
+export const ignoreGroups = {
+  packageManagers: [
+    IGNORE.npm_lock,
+    IGNORE.yarn_lock,
+    IGNORE.pnpm_lock,
+    IGNORE.yarn_cache,
+    IGNORE.npm_cache,
+    IGNORE.pnpm_cache,
+    IGNORE.npm_debug,
+    IGNORE.yarn_debug,
+    IGNORE.pnpm_debug,
+    IGNORE.yarn_error,
+  ],
+  build: [
+    IGNORE.build_dir,
+    IGNORE.dist_dir,
+    IGNORE.out_dir,
+    IGNORE.temp_dir,
+    IGNORE.map_files,
+  ],
 }

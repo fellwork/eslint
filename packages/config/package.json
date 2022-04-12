@@ -18,18 +18,17 @@
     "url": "git+https://github.com/fellwork/eslint.git",
     "directory": "packages/config"
   },
-  "main": "lib/index.cjs",
-  "module": "lib/index.mjs",
-  "types": "lib/index.d.ts",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "types": "index.d.ts",
   "files": [
-    "lib",
     "*.md"
   ],
   "scripts": {
     "build": "unbuild",
-    "dev": "unbuild --stub"
+    "watch": "unbuild --stub"
   },
-  "typings": "lib/index.d.ts",
+  "typings": "index.d.ts",
   "peerDependencies": {
     "eslint": "^7 || ^8"
   },

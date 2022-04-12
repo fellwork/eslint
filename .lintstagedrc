@@ -1,0 +1,3 @@
+{
+  "packages/**/*.[jt]s?(x)": ["eslint"]
+}
