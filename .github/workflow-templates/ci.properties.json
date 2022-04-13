@@ -1,0 +1,11 @@
+{
+  "name": "CI",
+  "description": "CI Workflow",
+  "categories": [
+    "Javascript",
+    "Typescript"
+  ],
+  "filePatterns": [
+    "package.json$"
+  ]
+}
