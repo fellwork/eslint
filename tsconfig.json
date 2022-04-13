@@ -4,7 +4,7 @@
       "esnext"
     ],
     "target": "es5",
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "module": "commonjs",
     "checkJs": false,

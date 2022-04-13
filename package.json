@@ -1,5 +1,6 @@
 {
   "name": "fellwork-eslint-root",
+  "version": "0.0.0-development",
   "private": true,
   "packageManager": "pnpm@7.0.0-rc.3",
   "description": "Fellwork ESLint monorepo",
@@ -12,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fellwork/eslint.git"
+    "url": "https://github.com/fellwork/eslint.git"
   },
   "scripts": {
     "build": "pnpm -r build",
@@ -21,10 +22,8 @@
     "format": "pnpm format:md && pnpm format:script",
     "format:md": "prettier -w \"**/*.md\"",
     "format:script": "eslint . --fix --cache",
-    "postinstall": "husky install",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install",
-    "watch": "pnpm -r watch"
+    "watch": "pnpm -r watch",
+    "semantic-release": "semantic-release"
   },
   "bugs": {
     "url": "https://github.com/fellwork/eslint/issues"
@@ -32,20 +31,15 @@
   "homepage": "https://github.com/fellwork/eslint#readme",
   "devDependencies": {
     "@antfu/eslint-config": "^0.20.2",
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@commitlint/config-lerna-scopes": "^16.2.2",
     "@rushstack/eslint-patch": "^1.1.2",
     "@types/prettier": "^2.6.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "eslint": "^8.13.0",
-    "husky": "^7.0.4",
     "lerna": "^4.0.0",
-    "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
     "rollup": "^2.70.1",
-    "ts-essentials": "^9.1.2",
+    "semantic-release": "^19.0.2",
     "typescript": "^4.6.3",
     "vitest": "^0.9.3"
   },
