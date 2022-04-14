@@ -1,0 +1,37 @@
+{
+  "name": "@fellwork/{{kebab}}",
+  "description": "{{description}}",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "homepage": "https://github.com/fellwork/eslint#readme",
+  "bugs": {
+    "url": "https://github.com/fellwork/eslint/issues",
+    "email": "Fellwork <shane@fellwork.com>"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shane McGuirt",
+    "email": "10144278+srmcguirt@users.noreply.github.com"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fellwork/eslint"
+  },
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "typings": "index.d.ts",
+  "files": [
+    "*.md"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "watch": "unbuild --stub"
+  }
+}
