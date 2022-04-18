@@ -66,9 +66,13 @@ importers:
       '@fellwork/eslint-config-import': workspace:*
       '@fellwork/eslint-config-prettier': workspace:*
       '@fellwork/eslint-config-typescript': workspace:*
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       eslint: ^8.13.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     dependencies:
@@ -77,9 +81,13 @@ importers:
       '@fellwork/eslint-config-prettier': link:../prettier
       '@fellwork/eslint-config-typescript': link:../typescript
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
@@ -87,32 +95,58 @@ importers:
     specifiers:
       '@fellwork/eslint-config-env': workspace:*
       '@fellwork/eslint-shared': workspace:*
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       eslint: ^8.13.0
+      eslint-plugin-jsonc: ^2.2.1
+      eslint-plugin-markdown: ^2.2.1
+      eslint-plugin-yml: ^0.14.0
+      jsonc-eslint-parser: ^2.1.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
+      yaml-eslint-parser: ^0.5.0
     dependencies:
       '@fellwork/eslint-config-env': link:../env
       '@fellwork/eslint-shared': link:../shared
+      eslint-plugin-jsonc: 2.2.1_eslint@8.13.0
+      eslint-plugin-markdown: 2.2.1_eslint@8.13.0
+      eslint-plugin-yml: 0.14.0_eslint@8.13.0
+      jsonc-eslint-parser: 2.1.0
+      yaml-eslint-parser: 0.5.0
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
   packages/env:
     specifiers:
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       eslint: ^8.13.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
@@ -120,12 +154,16 @@ importers:
     specifiers:
       '@fellwork/eslint-config-env': workspace:*
       '@fellwork/eslint-shared': workspace:*
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       eslint: ^8.13.0
       eslint-import-resolver-node: ^0.3.6
       eslint-import-resolver-typescript: ^2.7.1
       eslint-plugin-import: ^2.26.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     dependencies:
@@ -135,9 +173,13 @@ importers:
       eslint-import-resolver-typescript: 2.7.1_25dbcfb8cfecb7418ebda712664abe37
       eslint-plugin-import: 2.26.0_eslint@8.13.0
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
@@ -145,12 +187,16 @@ importers:
     specifiers:
       '@fellwork/eslint-config-env': workspace:*
       '@fellwork/eslint-shared': workspace:*
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       eslint: ^8.13.0
       eslint-config-prettier: ^8.5.0
       eslint-plugin-prettier: ^4.0.0
       prettier: ^2.6.2
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     dependencies:
@@ -159,27 +205,39 @@ importers:
       eslint-config-prettier: 8.5.0_eslint@8.13.0
       eslint-plugin-prettier: 4.0.0_1815ac95b7fb26c13c7d48a8eef62d0f
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
       prettier: 2.6.2
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
   packages/shared:
     specifiers:
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       editorconfig: ^0.15.3
       eslint: ^8.13.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     dependencies:
       editorconfig: 0.15.3
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
@@ -187,11 +245,15 @@ importers:
     specifiers:
       '@fellwork/eslint-config-env': workspace:*
       '@fellwork/eslint-shared': workspace:*
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
       '@types/eslint': ^8.4.1
       '@types/node': ^17.0.23
       '@typescript-eslint/eslint-plugin': ^5.19.0
       '@typescript-eslint/parser': ^5.19.0
       eslint: ^8.13.0
+      semantic-release: ^19.0.2
+      semantic-release-monorepo: ^7.0.5
       typescript: ^4.6.3
       unbuild: ^0.7.2
     dependencies:
@@ -200,9 +262,13 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.19.0_f34adc8488d2e4f014fe61432d70cbf2
       '@typescript-eslint/parser': 5.19.0_eslint@8.13.0+typescript@4.6.3
     devDependencies:
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.2
       '@types/eslint': 8.4.1
       '@types/node': 17.0.23
       eslint: 8.13.0
+      semantic-release: 19.0.2
+      semantic-release-monorepo: 7.0.5_semantic-release@19.0.2
       typescript: 4.6.3
       unbuild: 0.7.2
 
@@ -1690,7 +1756,6 @@ packages:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
       '@types/unist': 2.0.6
-    dev: true
 
   /@types/minimatch/3.0.5:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
@@ -1738,7 +1803,6 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
-    dev: true
 
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
@@ -1886,13 +1950,11 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.7.0
-    dev: true
 
   /acorn/8.7.0:
     resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /add-stream/1.0.0:
     resolution: {integrity: sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=}
@@ -2365,15 +2427,12 @@ packages:
 
   /character-entities-legacy/1.1.4:
     resolution: {integrity: sha512-3Xnr+7ZFS1uxeiUDvV02wQ+QDbc55o97tIV5zHScSPJpcLm/r0DFPcoY3tYRp+VZukxuMeKgXYmsXQHO05zQeA==}
-    dev: true
 
   /character-entities/1.2.4:
     resolution: {integrity: sha512-iBMyeEHxfVnIakwOuDXpVkc54HijNgCyQB2w0VfGQThle6NXn50zU6V/u+LDhxHcDUPojn6Kpga3PTAD8W1bQw==}
-    dev: true
 
   /character-reference-invalid/1.1.4:
     resolution: {integrity: sha512-mKKUkUbhPpQlCOfIuZkvSEgktjPFIsZKRRbC6KWVEMvlzblj3i3asQv5ODsrwt0N3pHAEvjP8KTQPHkp0+6jOg==}
-    dev: true
 
   /chardet/0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
@@ -2710,6 +2769,14 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
+    dev: true
+
+  /cross-spawn/5.1.0:
+    resolution: {integrity: sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=}
+    dependencies:
+      lru-cache: 4.1.5
+      shebang-command: 1.2.0
+      which: 1.3.1
     dev: true
 
   /cross-spawn/7.0.3:
@@ -3581,7 +3648,6 @@ packages:
       eslint-utils: 3.0.0_eslint@8.13.0
       jsonc-eslint-parser: 2.1.0
       natural-compare: 1.4.0
-    dev: true
 
   /eslint-plugin-markdown/2.2.1_eslint@8.13.0:
     resolution: {integrity: sha512-FgWp4iyYvTFxPwfbxofTvXxgzPsDuSKHQy2S+a8Ve6savbujey+lgrFFbXQA0HPygISpRYWYBjooPzhYSF81iA==}
@@ -3593,7 +3659,6 @@ packages:
       mdast-util-from-markdown: 0.8.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /eslint-plugin-n/15.1.0_eslint@8.13.0:
     resolution: {integrity: sha512-Tgx4Z58QXv2Ha7Qzp0u4wavnZNZ3AOievZMxrAxi7nvDbzD5B/JqOD80LHYcGHFZc2HD9jDmM/+KWMPov46a4A==}
@@ -3712,7 +3777,6 @@ packages:
       yaml-eslint-parser: 0.5.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -3809,7 +3873,6 @@ packages:
       acorn: 8.7.0
       acorn-jsx: 5.3.2_acorn@8.7.0
       eslint-visitor-keys: 3.3.0
-    dev: true
 
   /esprima/4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
@@ -3852,6 +3915,19 @@ packages:
 
   /eventemitter3/4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
+    dev: true
+
+  /execa/0.8.0:
+    resolution: {integrity: sha1-2NdrvBtVIX7RkP1t1J08d07PyNo=}
+    engines: {node: '>=4'}
+    dependencies:
+      cross-spawn: 5.1.0
+      get-stream: 3.0.0
+      is-stream: 1.1.0
+      npm-run-path: 2.0.2
+      p-finally: 1.0.0
+      signal-exit: 3.0.7
+      strip-eof: 1.0.0
     dev: true
 
   /execa/5.1.1:
@@ -4168,6 +4244,11 @@ packages:
   /get-port/5.1.1:
     resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /get-stream/3.0.0:
+    resolution: {integrity: sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=}
+    engines: {node: '>=4'}
     dev: true
 
   /get-stream/6.0.1:
@@ -4632,14 +4713,12 @@ packages:
 
   /is-alphabetical/1.0.4:
     resolution: {integrity: sha512-DwzsA04LQ10FHTZuL0/grVDk4rFoVH1pjAToYwBrHSxcrBIGQuXrQMtD5U1b0U2XVgKZCTLLP8u2Qxqhy3l2Vg==}
-    dev: true
 
   /is-alphanumerical/1.0.4:
     resolution: {integrity: sha512-UzoZUr+XfVz3t3v4KyGEniVL9BDRoQtY7tOyrRybkVNjDFWyo1yhXNGrrBTQxp3ib9BLAWs7k2YKBQsFRkZG9A==}
     dependencies:
       is-alphabetical: 1.0.4
       is-decimal: 1.0.4
-    dev: true
 
   /is-arrayish/0.2.1:
     resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
@@ -4706,7 +4785,6 @@ packages:
 
   /is-decimal/1.0.4:
     resolution: {integrity: sha512-RGdriMmQQvZ2aqaQq3awNA6dCGtKpiDFcOzrTWrDAT2MiWrKQVPmxLGHl7Y2nNu6led0kEyoX0enY0qXYsv9zw==}
-    dev: true
 
   /is-descriptor/0.1.6:
     resolution: {integrity: sha512-avDYr0SB3DwO9zsMov0gKCESFYqCnE4hq/4z3TdUlukEy5t9C0YRq7HLrsN52NAcqXKaepeCD0n+B0arnVG3Hg==}
@@ -4762,7 +4840,6 @@ packages:
 
   /is-hexadecimal/1.0.4:
     resolution: {integrity: sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==}
-    dev: true
 
   /is-lambda/1.0.1:
     resolution: {integrity: sha1-PZh3iZ5qU+/AFgUEzeFfgubwYdU=}
@@ -4852,6 +4929,11 @@ packages:
     resolution: {integrity: sha512-NKzJmQzJfEEma3w5cJNcUMxoXfDjz0Zj0eyCalHn2E6VOwlzjZo0yuO2fcBSf8zhFuVCL/82/r5gRcoi6aEPVQ==}
     dependencies:
       protocols: 1.4.8
+    dev: true
+
+  /is-stream/1.1.0:
+    resolution: {integrity: sha1-EtSj3U5o4Lec6428hBc66A2RykQ=}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /is-stream/2.0.1:
@@ -5007,7 +5089,6 @@ packages:
       eslint-visitor-keys: 3.3.0
       espree: 9.3.1
       semver: 7.3.6
-    dev: true
 
   /jsonc-parser/3.0.0:
     resolution: {integrity: sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==}
@@ -5219,7 +5300,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -5245,7 +5325,6 @@ packages:
     dependencies:
       pseudomap: 1.0.2
       yallist: 2.1.2
-    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -5399,11 +5478,9 @@ packages:
       unist-util-stringify-position: 2.0.3
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /mdast-util-to-string/2.0.0:
     resolution: {integrity: sha512-AW4DRS3QbBayY/jJmD8437V1Gombjf8RSOUCMFBuo5iHi58AGEgVCKQ+ezHkZZDpAQS75hcBMpLqjpJTjtUL7w==}
-    dev: true
 
   /meow/8.1.2:
     resolution: {integrity: sha512-r85E3NdZ+mpYk1C6RjPFEMSE+s1iZMuHtsHAqY0DT3jZczl0diWUZ8g6oU7h0M9cD2EL+PzaYghhCLzR0ZNn5Q==}
@@ -5437,7 +5514,6 @@ packages:
       parse-entities: 2.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /micromatch/3.1.10:
     resolution: {integrity: sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==}
@@ -5705,7 +5781,6 @@ packages:
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
-    dev: true
 
   /negotiator/0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -5915,6 +5990,13 @@ packages:
       npm-package-arg: 8.1.5
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /npm-run-path/2.0.2:
+    resolution: {integrity: sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=}
+    engines: {node: '>=4'}
+    dependencies:
+      path-key: 2.0.1
     dev: true
 
   /npm-run-path/4.0.1:
@@ -6313,7 +6395,6 @@ packages:
       is-alphanumerical: 1.0.4
       is-decimal: 1.0.4
       is-hexadecimal: 1.0.4
-    dev: true
 
   /parse-json/4.0.0:
     resolution: {integrity: sha1-vjX1Qlvh9/bHRxhPmKeIy5lHfuA=}
@@ -6382,6 +6463,11 @@ packages:
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
     engines: {node: '>=0.10.0'}
+
+  /path-key/2.0.1:
+    resolution: {integrity: sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=}
+    engines: {node: '>=4'}
+    dev: true
 
   /path-key/3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -6463,6 +6549,13 @@ packages:
       jsonc-parser: 3.0.0
       mlly: 0.3.19
       pathe: 0.2.0
+    dev: true
+
+  /pkg-up/2.0.0:
+    resolution: {integrity: sha1-yBmscoBZpGHKscOImivjxJoATX8=}
+    engines: {node: '>=4'}
+    dependencies:
+      find-up: 2.1.0
     dev: true
 
   /pluralize/8.0.0:
@@ -6547,7 +6640,6 @@ packages:
 
   /pseudomap/1.0.2:
     resolution: {integrity: sha1-8FKijacOYYkX7wqKw0wa5aaChrM=}
-    dev: false
 
   /psl/1.8.0:
     resolution: {integrity: sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==}
@@ -6598,6 +6690,10 @@ packages:
   /quick-lru/4.0.1:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
+    dev: true
+
+  /ramda/0.25.0:
+    resolution: {integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==}
     dev: true
 
   /rc/1.2.8:
@@ -7004,6 +7100,29 @@ packages:
     resolution: {integrity: sha512-M9gnWtn3J0W+UhJOHmBxBTwv8mZCan5i1Himp60t6vvZcor0wr+IM0URKmIglsWJ7bRujNAVVN77fp+uZaWoKg==}
     dev: true
 
+  /semantic-release-monorepo/7.0.5_semantic-release@19.0.2:
+    resolution: {integrity: sha512-riOYD8eZ5PIST7o97Ltc01l8VQW7q01NmPDRPOBycaeZczJowyKkzkBfo92kTIWDFWbdO3G8A695JrrYjoTaiw==}
+    peerDependencies:
+      semantic-release: '>=15.11.x'
+    dependencies:
+      debug: 3.2.7
+      execa: 0.8.0
+      p-limit: 1.3.0
+      pkg-up: 2.0.0
+      ramda: 0.25.0
+      read-pkg: 5.2.0
+      semantic-release: 19.0.2
+      semantic-release-plugin-decorators: 3.0.1_semantic-release@19.0.2
+    dev: true
+
+  /semantic-release-plugin-decorators/3.0.1_semantic-release@19.0.2:
+    resolution: {integrity: sha512-f5Qjvv/AJYByvkaj11a+05gQwfPwgQKo5OIhj8YVM2Dhf2rOPEOLD83jGrTdM7Nuf//sZYw77/cGUSVygUG9Kg==}
+    peerDependencies:
+      semantic-release: '>=11'
+    dependencies:
+      semantic-release: 19.0.2
+    dev: true
+
   /semantic-release/19.0.2:
     resolution: {integrity: sha512-7tPonjZxukKECmClhsfyMKDt0GR38feIC2HxgyYaBi+9tDySBLjK/zYDLhh+m6yjnHIJa9eBTKYE7k63ZQcYbw==}
     engines: {node: '>=16 || ^14.17'}
@@ -7099,11 +7218,23 @@ packages:
       kind-of: 6.0.3
     dev: true
 
+  /shebang-command/1.2.0:
+    resolution: {integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      shebang-regex: 1.0.0
+    dev: true
+
   /shebang-command/2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
     dependencies:
       shebang-regex: 3.0.0
+    dev: true
+
+  /shebang-regex/1.0.0:
+    resolution: {integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /shebang-regex/3.0.0:
@@ -7439,6 +7570,11 @@ packages:
   /strip-bom/4.0.0:
     resolution: {integrity: sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w==}
     engines: {node: '>=8'}
+    dev: true
+
+  /strip-eof/1.0.0:
+    resolution: {integrity: sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /strip-final-newline/2.0.0:
@@ -7863,7 +7999,6 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.6
-    dev: true
 
   /universal-user-agent/6.0.0:
     resolution: {integrity: sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==}
@@ -8190,7 +8325,6 @@ packages:
 
   /yallist/2.1.2:
     resolution: {integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=}
-    dev: false
 
   /yallist/3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -8207,12 +8341,10 @@ packages:
       eslint-visitor-keys: 3.3.0
       lodash: 4.17.21
       yaml: 1.10.2
-    dev: true
 
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-    dev: true
 
   /yargs-parser/20.2.4:
     resolution: {integrity: sha512-WOkpgNhPTlE73h4VFAFsOnomJVaovO8VqLDzy5saChRBFQFBoMYirowyW+Q9HB4HFF4Z7VZTiG3iSzJJA29yRA==}

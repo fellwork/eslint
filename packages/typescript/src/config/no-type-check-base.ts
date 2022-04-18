@@ -8,7 +8,7 @@ export const noTypeCheckBase: Linter.BaseConfig = {
   plugins: ['@typescript-eslint'],
   rules: {
     ...noTypeCheckRules.rules,
-    // off
+    // Off
     'no-undef': 'off',
     '@typescript-eslint/ban-tslint-comment': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
@@ -16,7 +16,7 @@ export const noTypeCheckBase: Linter.BaseConfig = {
     '@typescript-eslint/typedef': 'off',
     '@typescript-eslint/no-type-alias': 'off',
     '@typescript-eslint/adjacent-overload-signatures': 'warn',
-    // warn or error
+    // Warn or error
     'indent': 'off',
     '@typescript-eslint/indent': ['warn', SharedEditorConfig.indent_size],
     '@typescript-eslint/array-type': [
@@ -72,7 +72,7 @@ export const noTypeCheckBase: Linter.BaseConfig = {
     '@typescript-eslint/sort-type-union-intersection-members': 'warn',
     '@typescript-eslint/type-annotation-spacing': 'warn',
     '@typescript-eslint/unified-signatures': 'warn',
-    // style
+    // Style
     'brace-style': 'off',
     '@typescript-eslint/brace-style': 'warn',
     'comma-dangle': 'off',
@@ -129,7 +129,7 @@ export const noTypeCheckBase: Linter.BaseConfig = {
     'quotes': 'off',
     '@typescript-eslint/quotes': ['warn', 'single'],
     'semi': 'off',
-    '@typescript-eslint/semi': 'warn',
+    '@typescript-eslint/semi': ['warn', 'never'],
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': [
       'warn',

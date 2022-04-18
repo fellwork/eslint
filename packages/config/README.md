@@ -1,1 +1,1 @@
-# eslint-config
+# @fellwork/eslint-config

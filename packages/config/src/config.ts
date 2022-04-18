@@ -6,6 +6,5 @@ export const config: Linter.Config = {
     require.resolve('@fellwork/eslint-config-core'),
     require.resolve('@fellwork/eslint-config-typescript'),
     require.resolve('@fellwork/eslint-config-import'),
-    require.resolve('@fellwork/eslint-config-prettier'),
   ],
 }

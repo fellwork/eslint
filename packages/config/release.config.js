@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 module.exports = {
+  extends: ['semantic-release-monorepo'],
   branches: 'main',
   repositoryUrl: 'https://github.com/fellwork/eslint',
   debug: 'true',
@@ -11,15 +12,15 @@ module.exports = {
     [
       '@semantic-release/changelog',
       {
-        changelogFile: 'CHANGELOG.md',
-      },
+        changelogFile: 'CHANGELOG.md'
+      }
     ],
     [
       '@semantic-release/git',
       {
         assets: ['package.json', 'pnpm-lock.yaml', 'CHANGELOG.md'],
-        message: `chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}`,
-      },
-    ],
-  ],
+        message: `chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}`
+      }
+    ]
+  ]
 }

@@ -1,1 +1,1 @@
-# eslint-shared
+# @fellwork/eslint-shared

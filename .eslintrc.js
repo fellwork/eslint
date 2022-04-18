@@ -2,5 +2,5 @@
 
 module.exports = {
   extends: ['@fellwork'],
-  parserOptions: { tsconfigRootDir: __dirname },
-};
+  parserOptions: { tsconfigRootDir: __dirname }
+}

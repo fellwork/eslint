@@ -23,7 +23,8 @@
     "format:md": "prettier -w \"**/*.md\"",
     "format:script": "eslint . --fix --cache",
     "watch": "pnpm -r watch",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
   },
   "bugs": {
     "url": "https://github.com/fellwork/eslint/issues"
