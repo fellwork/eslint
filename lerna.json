@@ -1,0 +1,18 @@
+{
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "packages": ["packages/*"],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "message": "chore(release): publish %s",
+      "ignoreChanges": ["**/*.md"],
+      "noPrivate": true,
+      "registry": "https://npm.pkg.github.com/fellwork",
+      "yes": true
+    }
+  }
+}

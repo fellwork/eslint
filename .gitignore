@@ -80,6 +80,7 @@ dist
 
 # Compilation output
 lib
+packages/*/lib
 
 # Gatsby files
 .cache/

@@ -1,6 +1,7 @@
 {
   "name": "@fellwork/eslint-config-core",
   "description": "Core ESLint rules and standards",
+  "version": "0.0.0",
   "keywords": [
     "eslint",
     "config",
@@ -32,6 +33,7 @@
   ],
   "scripts": {
     "build": "unbuild",
+    "docs": "typedoc",
     "preinstall": "npx only-allow pnpm",
     "watch": "unbuild --stub"
   },
@@ -43,7 +45,9 @@
     "@types/node": "^17.0.23",
     "devmoji": "^2.3.0",
     "eslint": "^8.13.0",
+    "release-it": "^14.14.2",
     "standard-version": "^9.3.2",
+    "typedoc": "^0.22.15",
     "typescript": "^4.6.3",
     "unbuild": "^0.7.2"
   },
@@ -51,8 +55,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@fellwork/eslint-config-env": "workspace:*",
-    "@fellwork/eslint-shared": "workspace:*",
+    "@fellwork/eslint-config-env": "*",
+    "@fellwork/eslint-shared": "*",
     "eslint-plugin-jsonc": "^2.2.1",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-yml": "^0.14.0",
