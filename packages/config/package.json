@@ -1,6 +1,7 @@
 {
   "name": "@fellwork/eslint-config",
   "description": "Shared ESLint config",
+  "version": "0.0.2",
   "keywords": [
     "eslint",
     "config",
@@ -29,6 +30,7 @@
   "scripts": {
     "build": "unbuild",
     "preinstall": "npx only-allow pnpm",
+    "release": "standard-version",
     "watch": "unbuild --stub"
   },
   "peerDependencies": {
@@ -43,13 +45,11 @@
     "@fellwork/eslint-config-typescript": "workspace:*"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
     "@types/eslint": "^8.4.1",
     "@types/node": "^17.0.23",
+    "devmoji": "^2.3.0",
     "eslint": "^8.13.0",
-    "semantic-release": "^19.0.2",
-    "semantic-release-monorepo": "^7.0.5",
+    "standard-version": "^9.3.2",
     "typescript": "^4.6.3",
     "unbuild": "^0.7.2"
   },

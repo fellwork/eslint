@@ -15,24 +15,40 @@ jobs:
     strategy:
       matrix:
         node-version: [16]
-    steps:  
+    steps:
       - name: Checkout commit
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.0
         with:
           version: next-7
-        
+
       - name: Setup Node
-      - uses: actions/setup-node@v2
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
           cache: 'pnpm'
-          
+
       - name: Install deps
         run:  pnpm install
-        
+
       - name: Build
         run:  pnpm build
-          
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
+
+    steps:
+      - name: Checkout commit
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'pnpm'

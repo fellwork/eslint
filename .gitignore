@@ -107,3 +107,6 @@ lib
 .vscode
 .sublime_project
 .history
+
+# turborepo
+.turbo

@@ -1,9 +1,13 @@
 {
     "version": "0.2",
-    "ignorePaths": [],
+    "language": "en,en-gb",
     "dictionaryDefinitions": [],
-    "dictionaries": [],
+    "dictionaries": [
+        "npm",
+        "software-terms"
+    ],
     "words": [
+        "devmoji",
         "eqeqeq",
         "esbuild",
         "IIFE",
@@ -12,8 +16,16 @@
         "nuxt",
         "readdirp",
         "TSXD",
+        "versionrc",
         "vitest"
     ],
-    "ignoreWords": [],
+    "ignorePaths": [
+        "node_modules",
+        "**/package.json",
+        "**/pnpm-lock.yaml",
+        "**/lib/**",
+        "**/dist/**",
+        "**/CHANGELOG.md"
+    ],
     "import": []
 }

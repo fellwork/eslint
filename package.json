@@ -1,6 +1,6 @@
 {
   "name": "fellwork-eslint-root",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@7.0.0-rc.3",
   "description": "Fellwork ESLint monorepo",
@@ -16,48 +16,36 @@
     "url": "https://github.com/fellwork/eslint.git"
   },
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "turbo run build",
+    "commit": "git add -a && git commit -m \"chore(release): :rocket: release \"",
     "lint:md": "prettier -c \"**/*.md\"",
     "lint:script": "eslint .",
     "format": "pnpm format:md && pnpm format:script",
     "format:md": "prettier -w \"**/*.md\"",
     "format:script": "eslint . --fix --cache",
-    "watch": "pnpm -r watch",
-    "semantic-release": "semantic-release",
-    "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+    "prepare": "husky install",
+    "push": "git push --follow-tags origin main"
   },
   "bugs": {
     "url": "https://github.com/fellwork/eslint/issues"
   },
   "homepage": "https://github.com/fellwork/eslint#readme",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.20.2",
     "@fellwork/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.2",
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "@types/mustache": "^4.1.2",
     "@types/node": "^17.0.23",
     "@types/prettier": "^2.6.0",
-    "@types/signale": "^1.4.4",
-    "@types/yargs": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
-    "change-case": "^4.1.2",
-    "copy-template-dir": "^1.4.0",
+    "devmoji": "^2.3.0",
     "esbuild": "^0.14.36",
     "eslint": "^8.13.0",
-    "lerna": "^4.0.0",
-    "mustache": "^4.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
     "prettier": "^2.6.2",
-    "readdirp": "^3.6.0",
-    "rollup": "^2.70.1",
-    "semantic-release": "^19.0.2",
-    "signale": "^1.4.0",
-    "title-case": "^3.0.3",
+    "turbo": "^1.2.4",
     "typescript": "^4.6.3",
-    "vitest": "^0.9.3",
-    "yargs": "^17.4.1"
+    "vitest": "^0.9.3"
   },
   "engines": {
     "pnpm": ">=7.0.0-rc.3"

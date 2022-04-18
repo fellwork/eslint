@@ -3,10 +3,10 @@
     "lib": [
       "esnext"
     ],
-    "target": "es5",
+    "target": "esnext",
     "allowJs": false,
     "skipLibCheck": true,
-    "module": "commonjs",
+    "module": "esnext",
     "checkJs": false,
     "resolveJsonModule": true,
     "jsx": "preserve",
@@ -26,7 +26,6 @@
     "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": [
-    "packages",
-    "scripts"
+    "packages"
   ]
 }
