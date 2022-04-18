@@ -1,3 +1,5 @@
+import type { Linter } from 'eslint'
+
 const IGNORE = {
   bower_comp: '**/bower_components',
   build_dir: '**/build/**',
@@ -42,7 +44,7 @@ const IGNORE = {
   yarn_lock: '**/yarn.lock',
 }
 
-export const ignoreGroups = {
+export const IgnoreGroups = {
   packageManagers: [
     IGNORE.npm_lock,
     IGNORE.yarn_lock,
@@ -63,3 +65,16 @@ export const ignoreGroups = {
     IGNORE.map_files,
   ],
 }
+
+const notIgnored = {
+  notDotDir: '!.*/**/*',
+  notDotFile: '!.*',
+  notSource: '!src/**/*',
+  notRoot: '!**/*',
+}
+
+export const ignore: Linter.Config['ignorePatterns'] = [
+  ...Object.values(notIgnored),
+  ...Object.values(IgnoreGroups.packageManagers),
+  ...Object.values(IgnoreGroups.build),
+]

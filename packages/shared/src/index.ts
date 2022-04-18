@@ -1,2 +1,5 @@
+export * from './types/editorconfig'
 export * from './types/extensions'
+export * from './types/helpers'
 export * from './types/ignore'
+export * from './config'

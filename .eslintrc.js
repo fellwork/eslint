@@ -1,6 +1,6 @@
-require('@rushstack/eslint-patch/modern-module-resolution')
+// Require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
-  extends: ['@antfu'],
+  extends: ['@fellwork'],
   parserOptions: { tsconfigRootDir: __dirname },
-}
+};

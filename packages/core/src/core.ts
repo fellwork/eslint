@@ -1,10 +1,9 @@
 import type { Linter } from 'eslint'
-import { fromStd } from './from-std'
-import { fromEslint } from './from-eslint'
+import { splat } from './splat'
 
 export const core: Linter.BaseConfig = {
+  extends: [require.resolve('@fellwork/eslint-config-env')],
   rules: {
-    ...fromEslint,
-    ...fromStd,
+    ...splat,
   },
 }

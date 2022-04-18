@@ -1,3 +1,0 @@
-# @fellwork/{{kebab}}
-
-{{description}}

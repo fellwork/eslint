@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": "src",
     "baseUrl": "src",
-    "outDir": "../../lib/import"
+    "outDir": "lib"
   },
   "include": [
     "src"

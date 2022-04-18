@@ -12,7 +12,7 @@ export const Ext = {
   YML: '.yml',
 }
 
-export const extensionGroups = {
+export const ExtensionGroups = {
   typescript: [Ext.TS, Ext.TSX, Ext.TSD, Ext.TSXD],
   javascript: [Ext.JS, Ext.JSX],
   jsAndTs: [Ext.JS, Ext.JSX, Ext.TS, Ext.TSX, Ext.TSD, Ext.TSXD],

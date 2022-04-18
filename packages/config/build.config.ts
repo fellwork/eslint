@@ -4,7 +4,7 @@ export default defineBuildConfig({
   entries: [
     'src/index',
   ],
-  outDir: '../../lib/config',
+  outDir: 'lib',
   declaration: true,
   clean: true,
   rollup: {
