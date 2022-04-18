@@ -1,7 +1,7 @@
 {
   "name": "@fellwork/eslint-shared",
   "description": "Shared configuration for ESLint",
-  "version": null,
+  "version": "0.1.0",
   "keywords": [
     "eslint",
     "config",

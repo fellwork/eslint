@@ -1,7 +1,7 @@
 {
   "name": "@fellwork/eslint-config-typescript",
   "description": "Typescript configurations for ESLint",
-  "version": null,
+  "version": "0.1.0",
   "keywords": [
     "eslint",
     "config",
@@ -56,7 +56,6 @@
     "unbuild": "^0.7.2"
   },
   "publishConfig": {
-    "access": "public",
-    "@fellwork:registry": "https://npm.pkg.github.com/fellwork"
+    "access": "public"
   }
 }
