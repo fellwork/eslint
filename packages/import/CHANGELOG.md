@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [](https://github.com/fellwork/eslint/compare/@fellwork/eslint-config-import@0.1.0...@fellwork/eslint-config-import@) (2022-04-18)
+
+**Note:** Version bump only for package @fellwork/eslint-config-import
+
+
+
+
+
 # 0.1.0 (2022-04-18)
 
 

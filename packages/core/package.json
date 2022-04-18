@@ -1,7 +1,7 @@
 {
   "name": "@fellwork/eslint-config-core",
   "description": "Core ESLint rules and standards",
-  "version": "0.1.0",
+  "version": null,
   "keywords": [
     "eslint",
     "config",
