@@ -1,7 +1,7 @@
 {
   "name": "@fellwork/eslint-config-prettier",
   "description": "Prettier ESLint rules and standards",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
     "eslint",
     "config",
@@ -37,8 +37,8 @@
     "eslint": "^7 || ^8"
   },
   "dependencies": {
-    "@fellwork/eslint-config-env": "*",
-    "@fellwork/eslint-shared": "*",
+    "@fellwork/eslint-config-env": "^0.1.0",
+    "@fellwork/eslint-shared": "^0.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
   },

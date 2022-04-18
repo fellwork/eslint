@@ -1,7 +1,7 @@
 {
   "name": "@fellwork/eslint-config-typescript",
   "description": "Typescript configurations for ESLint",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
     "eslint",
     "config",
@@ -38,8 +38,8 @@
     "typescript": "^4"
   },
   "dependencies": {
-    "@fellwork/eslint-config-env": "*",
-    "@fellwork/eslint-shared": "*",
+    "@fellwork/eslint-config-env": "^0.1.0",
+    "@fellwork/eslint-shared": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0"
   },
