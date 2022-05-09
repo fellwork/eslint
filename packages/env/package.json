@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-config-env",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Environmental configurations for ESLint",
   "keywords": [
     "eslint",
