@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-shared",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Shared configuration for ESLint",
   "keywords": [
     "eslint",
@@ -49,7 +49,9 @@
   "unbuild": {
     "clean": true,
     "declaration": true,
-    "entries": ["src/index"],
+    "entries": [
+      "src/index"
+    ],
     "outDir": "lib",
     "rollup": {
       "emitCJS": true

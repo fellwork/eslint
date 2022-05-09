@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-config-react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React configurations for ESLint",
   "keywords": [
     "eslint",
@@ -53,7 +53,9 @@
   "unbuild": {
     "clean": true,
     "declaration": true,
-    "entries": ["src/index"],
+    "entries": [
+      "src/index"
+    ],
     "outDir": "lib",
     "rollup": {
       "emitCJS": true

@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-config-core",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Core ESLint rules and standards",
   "keywords": [
     "eslint",
@@ -65,7 +65,9 @@
   "unbuild": {
     "clean": true,
     "declaration": true,
-    "entries": ["src/index"],
+    "entries": [
+      "src/index"
+    ],
     "outDir": "lib",
     "rollup": {
       "emitCJS": true
