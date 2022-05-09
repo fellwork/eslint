@@ -1,1 +1,1 @@
-export { importConfig as default } from './config';
+export { importConfig as default } from './config'

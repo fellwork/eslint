@@ -8,6 +8,11 @@ export const env: Linter.BaseConfig = {
     es2021: true,
     node: true,
   },
+  globals: {
+    document: 'readonly',
+    navigator: 'readonly',
+    window: 'readonly',
+  },
   overrides: [
     {
       files: ['**/**.[jt]sx'],

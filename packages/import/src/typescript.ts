@@ -4,7 +4,7 @@ import { Ext } from '@fellwork/eslint-shared'
 export const importTypescript: Linter.BaseConfig = {
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': [Ext.TS, Ext.TSX, Ext.TSD, Ext.TSXD],
+      '@typescript-eslint/parser': [Ext.TS, Ext.TSX, Ext.DTS, Ext.DTSX],
     },
     'import/resolver': {
       [require.resolve('eslint-import-resolver-typescript')]: {

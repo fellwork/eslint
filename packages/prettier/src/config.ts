@@ -1,5 +1,5 @@
-import type { Linter } from 'eslint';
-import { SharedEditorConfig } from '@fellwork/eslint-shared';
+import type { Linter } from 'eslint'
+import { SharedEditorConfig } from '@fellwork/eslint-shared'
 
 export const prettierConfig: Linter.BaseConfig = {
   extends: [
@@ -20,4 +20,4 @@ export const prettierConfig: Linter.BaseConfig = {
       },
     ],
   },
-};
+}

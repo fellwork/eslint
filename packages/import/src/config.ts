@@ -1,11 +1,13 @@
-import type { Linter } from 'eslint';
-import { Ext } from '@fellwork/eslint-shared';
-import { importDeclarations } from './declarations';
-import { importBase } from './base';
-import { importTypescript } from './typescript';
+import type { Linter } from 'eslint'
+import { Ext } from '@fellwork/eslint-shared'
+import { importDeclarations } from './declarations'
+import { importBase } from './base'
+import { importTypescript } from './typescript'
 
 export const importConfig: Linter.BaseConfig = {
-  extends: [require.resolve('@fellwork/eslint-config-env')],
+  extends: [
+    'plugin:import/recommended',
+  ],
   settings: {
     'import/resolver': {
       node: {
@@ -19,12 +21,12 @@ export const importConfig: Linter.BaseConfig = {
   },
   overrides: [
     {
-      files: ['**/**.ts?(x)'],
+      files: ['*.ts?(x)'],
       ...importTypescript,
     },
     {
-      files: ['**/**.d.ts?(x)'],
+      files: ['*.d.ts?(x)'],
       ...importDeclarations,
     },
   ],
-};
+}

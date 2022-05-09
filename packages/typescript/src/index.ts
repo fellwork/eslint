@@ -1,1 +1,1 @@
-export { noTypeCheckConfig as default } from './config'
+export { typescriptConfig as default } from './config'

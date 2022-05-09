@@ -1,32 +1,32 @@
 {
-    "version": "0.2",
-    "language": "en,en-gb",
-    "dictionaryDefinitions": [],
-    "dictionaries": [
-        "npm",
-        "software-terms"
-    ],
-    "words": [
-        "devmoji",
-        "eqeqeq",
-        "esbuild",
-        "IIFE",
-        "infile",
-        "isnan",
-        "nocheck",
-        "nuxt",
-        "readdirp",
-        "TSXD",
-        "versionrc",
-        "vitest"
-    ],
-    "ignorePaths": [
-        "node_modules",
-        "**/package.json",
-        "**/pnpm-lock.yaml",
-        "**/lib/**",
-        "**/dist/**",
-        "**/CHANGELOG.md"
-    ],
-    "import": []
+  "version": "0.2",
+  "language": "en,en-gb",
+  "dictionaryDefinitions": [],
+  "dictionaries": [
+    "npm",
+    "software-terms"
+  ],
+  "words": [
+    "devmoji",
+    "eqeqeq",
+    "esbuild",
+    "IIFE",
+    "infile",
+    "isnan",
+    "nocheck",
+    "nuxt",
+    "readdirp",
+    "TSXD",
+    "versionrc",
+    "vitest"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "**/package.json",
+    "**/pnpm-lock.yaml",
+    "**/lib/**",
+    "**/dist/**",
+    "**/CHANGELOG.md"
+  ],
+  "import": []
 }

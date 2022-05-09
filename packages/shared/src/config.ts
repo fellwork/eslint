@@ -1,6 +1,6 @@
 import { resolve } from 'node:path'
 import { parseSync } from 'editorconfig'
-import type { EditorConfig } from './types/editorconfig'
+import type { EditorConfig } from './types'
 
 export const SharedEditorConfig = parseSync(
   resolve(
