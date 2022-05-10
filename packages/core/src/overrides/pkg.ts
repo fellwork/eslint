@@ -1,7 +1,6 @@
 import type { Linter } from 'eslint'
 
-export const pkgOverride: Linter.BaseConfig = {
-  parser: 'jsonc-eslint-parser',
+export const pkgOverride: Linter.Config = {
   rules: {
     'jsonc/sort-keys': [
       'error',

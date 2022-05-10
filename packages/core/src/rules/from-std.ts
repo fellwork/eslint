@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+import { SharedEditorConfig } from '@fellwork/eslint-shared'
 
 export const fromStd: Linter.Config['rules'] = {
   'no-var': 'warn',
@@ -42,7 +43,7 @@ export const fromStd: Linter.Config['rules'] = {
   'eqeqeq': ['error', 'smart'],
   'func-call-spacing': ['error', 'never'],
   'generator-star-spacing': 'off',
-  'indent': ['error', 2, {
+  'indent': ['error', SharedEditorConfig.tab_width, {
     SwitchCase: 1,
     VariableDeclarator: 1,
     outerIIFEBody: 1,
@@ -167,4 +168,12 @@ export const fromStd: Linter.Config['rules'] = {
   'wrap-iife': ['error', 'any', { functionPrototypeMethods: true }],
   'yield-star-spacing': ['error', 'both'],
   'yoda': ['error', 'never'],
+  'n/handle-callback-err': ['error', '^(err|error)$'],
+  'n/no-callback-literal': 'error',
+  'n/no-deprecated-api': 'error',
+  'n/no-exports-assign': 'error',
+  'n/no-new-require': 'error',
+  'n/no-path-concat': 'error',
+  'n/process-exit-as-throw': 'error',
+  'promise/param-names': 'error',
 }

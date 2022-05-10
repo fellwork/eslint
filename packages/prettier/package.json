@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-config-prettier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prettier ESLint rules and standards",
   "keywords": [
     "eslint",
@@ -31,7 +31,7 @@
     "build": "unbuild",
     "docs": "typedoc",
     "preinstall": "npx only-allow pnpm",
-    "watch": "unbuild --stub"
+    "release": "standard-version && git push --follow-tags && && pnpm -r publish --access public"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"

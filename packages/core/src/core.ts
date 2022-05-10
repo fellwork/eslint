@@ -1,11 +1,11 @@
 import type { Linter } from 'eslint'
+import { importRules, importSettings } from '@fellwork/eslint-shared'
 import { fromEslint, fromPractices, fromUnicorn, fromStd } from './rules'
 import { jsonOverride, ymlOverride, pkgOverride } from './overrides'
 
 export const core: Linter.Config = {
   extends: [
     require.resolve('@fellwork/eslint-config-env'),
-    require.resolve('@fellwork/eslint-config-import'),
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
@@ -31,43 +31,38 @@ export const core: Linter.Config = {
   plugins: [
     'html',
     'n',
+    'import',
     'promise',
     'unicorn',
   ],
-  rules: {
-    ...fromEslint,
-    ...fromStd,
-    ...fromPractices,
-    ...fromUnicorn,
-    'n/handle-callback-err': ['error', '^(err|error)$'],
-    'n/no-callback-literal': 'error',
-    'n/no-deprecated-api': 'error',
-    'n/no-exports-assign': 'error',
-    'n/no-new-require': 'error',
-    'n/no-path-concat': 'error',
-    'n/process-exit-as-throw': 'error',
-
-    'promise/param-names': 'error',
+  settings: {
+    ...importSettings,
   },
   overrides: [
     {
+      files: ['*.js', '*.mjs', '*.cjs'],
+      rules: {
+        ...importRules,
+        ...fromEslint,
+        ...fromStd,
+        ...fromPractices,
+        ...fromUnicorn,
+      },
+    },
+    {
       files: ['*.json', '*.json5'],
+      parser: 'jsonc-eslint-parser',
       ...jsonOverride,
     },
     {
       files: ['*.yaml', '*.yml'],
+      parser: 'yaml-eslint-parser',
       ...ymlOverride,
     },
     {
       files: ['package.json'],
+      parser: 'jsonc-eslint-parser',
       ...pkgOverride,
     },
   ],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.mjs'],
-      },
-    },
-  },
 }

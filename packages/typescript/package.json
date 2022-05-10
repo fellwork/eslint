@@ -1,6 +1,6 @@
 {
   "name": "@fellwork/eslint-config-typescript",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Typescript configurations for ESLint",
   "keywords": [
     "eslint",
@@ -31,14 +31,13 @@
     "build": "unbuild",
     "docs": "typedoc",
     "preinstall": "npx only-allow pnpm",
-    "watch": "unbuild --stub"
+    "release": "standard-version && git push --follow-tags && && pnpm -r publish --access public"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0",
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@fellwork/eslint-config-core": "workspace:*",
     "@fellwork/eslint-shared": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",

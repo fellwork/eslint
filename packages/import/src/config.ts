@@ -11,7 +11,7 @@ export const importConfig: Linter.BaseConfig = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: [Ext.JS, Ext.JSX],
+        extensions: [Ext.JS, Ext.JSX, Ext.MJS],
       },
     },
   },

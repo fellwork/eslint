@@ -7,6 +7,7 @@
  * const c: (string | null)[] = arr.filter(Boolean)
  * ```
  */
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 export const notNull = <T>(value: T): value is NonNullable<T> =>
   value !== null
 

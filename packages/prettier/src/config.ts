@@ -1,6 +1,9 @@
 import type { Linter } from 'eslint'
 import { SharedEditorConfig } from '@fellwork/eslint-shared'
 
+const defaultTabWidth = 2
+const defaultLineLength = 100
+
 export const prettierConfig: Linter.BaseConfig = {
   extends: [
     require.resolve('@fellwork/eslint-config-env'),
@@ -14,8 +17,8 @@ export const prettierConfig: Linter.BaseConfig = {
         singleQuote: true,
         quoteProps: 'consistent',
         endOfLine: SharedEditorConfig.end_of_line ?? 'lf',
-        tabWidth: SharedEditorConfig.tab_width ?? 2,
-        printWidth: SharedEditorConfig.max_line_length ?? 100,
+        tabWidth: SharedEditorConfig.tab_width ?? defaultTabWidth,
+        printWidth: SharedEditorConfig.max_line_length ?? defaultLineLength,
         semi: false,
       },
     ],

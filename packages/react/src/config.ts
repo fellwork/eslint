@@ -4,13 +4,12 @@ import { reactBase } from './base'
 
 export const reactConfig: Linter.BaseConfig = {
   extends: [
-    require.resolve('@fellwork/eslint-config-env'),
     'plugin:react/recommended',
-    require.resolve('@fellwork/eslint-config-typescript'),
+    "plugin:react-hooks/recommended"
   ],
   settings: {
     react: {
-      version: '17.0',
+      version: 'detect',
     },
   },
   rules: {

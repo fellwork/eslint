@@ -2,8 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
-    "baseUrl": "src",
-    "outDir": "../../lib/prettier"
+    "baseUrl": "src"
   },
   "include": [
     "src"

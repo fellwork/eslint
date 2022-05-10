@@ -22,7 +22,7 @@ export const fromPractices: Linter.Config['rules'] = {
   'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
   'block-scoped-var': 'error',
   'consistent-return': 'off',
-  'complexity': ['off', 11],
+  'complexity': ['off'],
   'no-alert': 'warn',
   'no-useless-escape': 'off',
   'vars-on-top': 'error',

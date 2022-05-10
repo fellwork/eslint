@@ -1,12 +1,11 @@
 {
-  "name": "@fellwork/eslint-config-env",
-  "version": "0.2.0",
-  "description": "Environmental configurations for ESLint",
+  "name": "@fellwork/eslint-config-patch",
+  "version": "0.1.0",
+  "description": "Modern patch configurations for ESLint",
   "keywords": [
     "eslint",
     "config",
-    "env",
-    "environment"
+    "patch"
   ],
   "homepage": "https://github.com/fellwork/eslint#readme",
   "bugs": {
@@ -18,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fellwork/eslint.git",
-    "directory": "packages/env"
+    "directory": "packages/patch"
   },
   "main": "lib/index.cjs",
   "module": "lib/index.mjs",
@@ -36,7 +35,10 @@
   },
   "peerDependencies": {
     "eslint": ">=7.4.0",
-    "typescript": ">=3.9"
+    "typescript": "^4"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.3"
   },
   "devDependencies": {
     "eslint": "^8.15.0"
